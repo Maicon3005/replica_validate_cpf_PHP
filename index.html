@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8"/>
+	<title>Validador de CPF</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-principal">
+    <form action="validador.php" method="post">
+        <h1>Digite um CPF</h1>
+            <input type="text" name="cpf" onkeypress="$(this).mask('000.000.000-00');">
+            <input type="submit" value="Validar CPF">
+    </form>
+    </div>
+</body>
+</html>
